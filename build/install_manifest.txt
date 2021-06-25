@@ -1,0 +1,13 @@
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/digitize.py
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/looper.mac
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/settings/init_gui
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/settings/init_vis
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/settings/quiet
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/settings/verbose
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/views/box_side_view
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/views/collision_view
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/views/front_view
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/views/side_view
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/scripts/G4History
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/simulation
+/cms/bah165/programs/AliCosmics/.temp/sim-install/bin/MATHUSLA/dump_geometry

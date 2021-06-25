@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/Schema/gdml.xsd">
+
+  <define>
+    <matrix coldim="2" name="RINDEX0x55eb20ee29f0" values="3.1e-06 1.58"/>
+    <matrix coldim="2" name="GROUPVEL0x55eb20ee2ad0" values="3.1e-06 189.742"/>
+  </define>
+
+  <materials>
+    <isotope N="12" Z="6" name="C120x55eb20aff800">
+      <atom unit="g/mole" value="12"/>
+    </isotope>
+    <isotope N="13" Z="6" name="C130x55eb20aff850">
+      <atom unit="g/mole" value="13.0034"/>
+    </isotope>
+    <element name="C0x55eb20aff8a0">
+      <fraction n="0.9893" ref="C120x55eb20aff800"/>
+      <fraction n="0.0107" ref="C130x55eb20aff850"/>
+    </element>
+    <isotope N="1" Z="1" name="H10x55eb20afb310">
+      <atom unit="g/mole" value="1.00782503081372"/>
+    </isotope>
+    <isotope N="2" Z="1" name="H20x55eb20aff5b0">
+      <atom unit="g/mole" value="2.01410199966617"/>
+    </isotope>
+    <element name="H0x55eb20aff600">
+      <fraction n="0.999885" ref="H10x55eb20afb310"/>
+      <fraction n="0.000115" ref="H20x55eb20aff5b0"/>
+    </element>
+    <material name="Scintillator0x55eb20ed8680" state="solid">
+      <property name="RINDEX" ref="RINDEX0x55eb20ee29f0"/>
+      <property name="GROUPVEL" ref="GROUPVEL0x55eb20ee2ad0"/>
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="64.6844741120544"/>
+      <D unit="g/cm3" value="1.032"/>
+      <fraction n="0.914708531800025" ref="C0x55eb20aff8a0"/>
+      <fraction n="0.0852914681999746" ref="H0x55eb20aff600"/>
+    </material>
+    <material Z="13" name="G4_Al0x55eb20b08990" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="166"/>
+      <D unit="g/cm3" value="2.699"/>
+      <atom unit="g/mole" value="26.9815"/>
+    </material>
+    <isotope N="14" Z="7" name="N140x55eb20affa80">
+      <atom unit="g/mole" value="14.0031"/>
+    </isotope>
+    <isotope N="15" Z="7" name="N150x55eb20affb20">
+      <atom unit="g/mole" value="15.0001"/>
+    </isotope>
+    <element name="N0x55eb20affb90">
+      <fraction n="0.99632" ref="N140x55eb20affa80"/>
+      <fraction n="0.00368" ref="N150x55eb20affb20"/>
+    </element>
+    <isotope N="16" Z="8" name="O160x55eb20affd60">
+      <atom unit="g/mole" value="15.9949"/>
+    </isotope>
+    <isotope N="17" Z="8" name="O170x55eb20affdb0">
+      <atom unit="g/mole" value="16.9991"/>
+    </isotope>
+    <isotope N="18" Z="8" name="O180x55eb20affe20">
+      <atom unit="g/mole" value="17.9992"/>
+    </isotope>
+    <element name="O0x55eb20afff30">
+      <fraction n="0.99757" ref="O160x55eb20affd60"/>
+      <fraction n="0.00038" ref="O170x55eb20affdb0"/>
+      <fraction n="0.00205" ref="O180x55eb20affe20"/>
+    </element>
+    <isotope N="36" Z="18" name="Ar360x55eb20b00cb0">
+      <atom unit="g/mole" value="35.9675"/>
+    </isotope>
+    <isotope N="38" Z="18" name="Ar380x55eb20b00d20">
+      <atom unit="g/mole" value="37.9627"/>
+    </isotope>
+    <isotope N="40" Z="18" name="Ar400x55eb20b00d90">
+      <atom unit="g/mole" value="39.9624"/>
+    </isotope>
+    <element name="Ar0x55eb20b00de0">
+      <fraction n="0.003365" ref="Ar360x55eb20b00cb0"/>
+      <fraction n="0.000632" ref="Ar380x55eb20b00d20"/>
+      <fraction n="0.996003" ref="Ar400x55eb20b00d90"/>
+    </element>
+    <material name="G4_AIR0x55eb20b01490" state="gas">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="85.7"/>
+      <D unit="g/cm3" value="0.00120479"/>
+      <fraction n="0.000124000124000124" ref="C0x55eb20aff8a0"/>
+      <fraction n="0.755267755267755" ref="N0x55eb20affb90"/>
+      <fraction n="0.231781231781232" ref="O0x55eb20afff30"/>
+      <fraction n="0.0128270128270128" ref="Ar0x55eb20b00de0"/>
+    </material>
+    <isotope N="54" Z="26" name="Fe540x55eb20b0f340">
+      <atom unit="g/mole" value="53.9396"/>
+    </isotope>
+    <isotope N="56" Z="26" name="Fe560x55eb20b0f390">
+      <atom unit="g/mole" value="55.9349"/>
+    </isotope>
+    <isotope N="57" Z="26" name="Fe570x55eb20b0f3e0">
+      <atom unit="g/mole" value="56.9354"/>
+    </isotope>
+    <isotope N="58" Z="26" name="Fe580x55eb20b0f430">
+      <atom unit="g/mole" value="57.9333"/>
+    </isotope>
+    <element name="Fe0x55eb20b0f480">
+      <fraction n="0.05845" ref="Fe540x55eb20b0f340"/>
+      <fraction n="0.91754" ref="Fe560x55eb20b0f390"/>
+      <fraction n="0.02119" ref="Fe570x55eb20b0f3e0"/>
+      <fraction n="0.00282" ref="Fe580x55eb20b0f430"/>
+    </element>
+    <material name="G4_Fe0x55eb20b0f880" state="solid">
+      <T unit="K" value="293.15"/>
+      <MEE unit="eV" value="286"/>
+      <D unit="g/cm3" value="7.874"/>
+      <fraction n="1" ref="Fe0x55eb20b0f480"/>
+    </material>
+  </materials>
+
+  <solids>
+    <box lunit="mm" name="0x55eb20ee3820" x="8990" y="8990" z="20"/>
+    <box lunit="mm" name="0x55eb20ee2550" x="9000" y="9000" z="30"/>
+    <subtraction name="M0L0_C0x55eb20ee38a0">
+      <first ref="0x55eb20ee2550"/>
+      <second ref="0x55eb20ee3820"/>
+    </subtraction>
+    <box lunit="mm" name="0x55eb20ee7f60" x="8990" y="8990" z="20"/>
+    <box lunit="mm" name="0x55eb20ee7ee0" x="9000" y="9000" z="30"/>
+    <subtraction name="M0L1_C0x55eb20ee7fe0">
+      <first ref="0x55eb20ee7ee0"/>
+      <second ref="0x55eb20ee7f60"/>
+    </subtraction>
+    <box lunit="mm" name="0x55eb20ee8780" x="8990" y="8990" z="20"/>
+    <box lunit="mm" name="0x55eb20ee8700" x="9000" y="9000" z="30"/>
+    <subtraction name="M0L2_C0x55eb20ee8800">
+      <first ref="0x55eb20ee8700"/>
+      <second ref="0x55eb20ee8780"/>
+    </subtraction>
+    <box lunit="mm" name="0x55eb20ee8fe0" x="8990" y="8990" z="20"/>
+    <box lunit="mm" name="0x55eb20ee8f60" x="9000" y="9000" z="30"/>
+    <subtraction name="M0L3_C0x55eb20ee9060">
+      <first ref="0x55eb20ee8f60"/>
+      <second ref="0x55eb20ee8fe0"/>
+    </subtraction>
+    <box lunit="mm" name="0x55eb20ee97c0" x="8990" y="8990" z="20"/>
+    <box lunit="mm" name="0x55eb20ee9740" x="9000" y="9000" z="30"/>
+    <subtraction name="M0L4_C0x55eb20ee9840">
+      <first ref="0x55eb20ee9740"/>
+      <second ref="0x55eb20ee97c0"/>
+    </subtraction>
+    <box lunit="mm" name="0x55eb20eea010" x="8990" y="8990" z="20"/>
+    <box lunit="mm" name="0x55eb20ee9f90" x="9000" y="9000" z="30"/>
+    <subtraction name="M0L5_C0x55eb20eea090">
+      <first ref="0x55eb20ee9f90"/>
+      <second ref="0x55eb20eea010"/>
+    </subtraction>
+    <box lunit="mm" name="0x55eb20eea7e0" x="8990" y="8990" z="20"/>
+    <box lunit="mm" name="0x55eb20eea760" x="9000" y="9000" z="30"/>
+    <subtraction name="M0L6_C0x55eb20eea860">
+      <first ref="0x55eb20eea760"/>
+      <second ref="0x55eb20eea7e0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL0PL10x55eb20eeaf00" x="100" y="100" z="17910"/>
+    <box lunit="mm" name="Module0BL0PL10x55eb20eeaf80" x="60" y="60" z="17870"/>
+    <subtraction name="Module0BL0PL10x55eb20eeb000">
+      <first ref="Module0BL0PL10x55eb20eeaf00"/>
+      <second ref="Module0BL0PL10x55eb20eeaf80"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL0PL20x55eb20eeb210" x="100" y="100" z="17910"/>
+    <box lunit="mm" name="Module0BL0PL20x55eb20eeb290" x="60" y="60" z="17870"/>
+    <subtraction name="Module0BL0PL20x55eb20eeb310">
+      <first ref="Module0BL0PL20x55eb20eeb210"/>
+      <second ref="Module0BL0PL20x55eb20eeb290"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL0PR10x55eb20eeb520" x="100" y="100" z="17910"/>
+    <box lunit="mm" name="Module0BL0PR10x55eb20eeb5a0" x="60" y="60" z="17870"/>
+    <subtraction name="Module0BL0PR10x55eb20eeb620">
+      <first ref="Module0BL0PR10x55eb20eeb520"/>
+      <second ref="Module0BL0PR10x55eb20eeb5a0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL0PR20x55eb20eeb830" x="100" y="100" z="17910"/>
+    <box lunit="mm" name="Module0BL0PR20x55eb20eeb8b0" x="60" y="60" z="17870"/>
+    <subtraction name="Module0BL0PR20x55eb20eeb930">
+      <first ref="Module0BL0PR20x55eb20eeb830"/>
+      <second ref="Module0BL0PR20x55eb20eeb8b0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL1PL10x55eb20eebe10" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL1PL10x55eb20eebe90" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL1PL10x55eb20eebf10">
+      <first ref="Module0BL1PL10x55eb20eebe10"/>
+      <second ref="Module0BL1PL10x55eb20eebe90"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL1PL20x55eb20eec120" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL1PL20x55eb20eec1a0" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL1PL20x55eb20eec220">
+      <first ref="Module0BL1PL20x55eb20eec120"/>
+      <second ref="Module0BL1PL20x55eb20eec1a0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL1PR10x55eb20eec430" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL1PR10x55eb20eec4b0" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL1PR10x55eb20eec530">
+      <first ref="Module0BL1PR10x55eb20eec430"/>
+      <second ref="Module0BL1PR10x55eb20eec4b0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL1PR20x55eb20eec740" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL1PR20x55eb20eec7c0" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL1PR20x55eb20eec840">
+      <first ref="Module0BL1PR20x55eb20eec740"/>
+      <second ref="Module0BL1PR20x55eb20eec7c0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL2PL10x55eb20eecc90" x="100" y="100" z="3940"/>
+    <box lunit="mm" name="Module0BL2PL10x55eb20eecd10" x="60" y="60" z="3900"/>
+    <subtraction name="Module0BL2PL10x55eb20eecd90">
+      <first ref="Module0BL2PL10x55eb20eecc90"/>
+      <second ref="Module0BL2PL10x55eb20eecd10"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL2PL20x55eb20eecfa0" x="100" y="100" z="3940"/>
+    <box lunit="mm" name="Module0BL2PL20x55eb20eed020" x="60" y="60" z="3900"/>
+    <subtraction name="Module0BL2PL20x55eb20eed0a0">
+      <first ref="Module0BL2PL20x55eb20eecfa0"/>
+      <second ref="Module0BL2PL20x55eb20eed020"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL2PR10x55eb20eed2b0" x="100" y="100" z="3940"/>
+    <box lunit="mm" name="Module0BL2PR10x55eb20eed330" x="60" y="60" z="3900"/>
+    <subtraction name="Module0BL2PR10x55eb20eed3b0">
+      <first ref="Module0BL2PR10x55eb20eed2b0"/>
+      <second ref="Module0BL2PR10x55eb20eed330"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL2PR20x55eb20eed5c0" x="100" y="100" z="3940"/>
+    <box lunit="mm" name="Module0BL2PR20x55eb20eed640" x="60" y="60" z="3900"/>
+    <subtraction name="Module0BL2PR20x55eb20eed6c0">
+      <first ref="Module0BL2PR20x55eb20eed5c0"/>
+      <second ref="Module0BL2PR20x55eb20eed640"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL3PL10x55eb20eedb90" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL3PL10x55eb20eedc10" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL3PL10x55eb20eedc90">
+      <first ref="Module0BL3PL10x55eb20eedb90"/>
+      <second ref="Module0BL3PL10x55eb20eedc10"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL3PL20x55eb20eedea0" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL3PL20x55eb20eedf20" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL3PL20x55eb20eedfa0">
+      <first ref="Module0BL3PL20x55eb20eedea0"/>
+      <second ref="Module0BL3PL20x55eb20eedf20"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL3PR10x55eb20eee1b0" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL3PR10x55eb20eee230" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL3PR10x55eb20eee2b0">
+      <first ref="Module0BL3PR10x55eb20eee1b0"/>
+      <second ref="Module0BL3PR10x55eb20eee230"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL3PR20x55eb20eee4c0" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL3PR20x55eb20eee540" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL3PR20x55eb20eee5c0">
+      <first ref="Module0BL3PR20x55eb20eee4c0"/>
+      <second ref="Module0BL3PR20x55eb20eee540"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL4PL10x55eb20eeea10" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL4PL10x55eb20eeea90" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL4PL10x55eb20eeeb10">
+      <first ref="Module0BL4PL10x55eb20eeea10"/>
+      <second ref="Module0BL4PL10x55eb20eeea90"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL4PL20x55eb20eeed20" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL4PL20x55eb20eeeda0" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL4PL20x55eb20eeee20">
+      <first ref="Module0BL4PL20x55eb20eeed20"/>
+      <second ref="Module0BL4PL20x55eb20eeeda0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL4PR10x55eb20eef030" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL4PR10x55eb20eef0b0" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL4PR10x55eb20eef130">
+      <first ref="Module0BL4PR10x55eb20eef030"/>
+      <second ref="Module0BL4PR10x55eb20eef0b0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL4PR20x55eb20eef340" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL4PR20x55eb20eef3c0" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL4PR20x55eb20eef440">
+      <first ref="Module0BL4PR20x55eb20eef340"/>
+      <second ref="Module0BL4PR20x55eb20eef3c0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL5PL10x55eb20eef890" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL5PL10x55eb20eef910" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL5PL10x55eb20eef990">
+      <first ref="Module0BL5PL10x55eb20eef890"/>
+      <second ref="Module0BL5PL10x55eb20eef910"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL5PL20x55eb20eefba0" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL5PL20x55eb20eefc20" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL5PL20x55eb20eefca0">
+      <first ref="Module0BL5PL20x55eb20eefba0"/>
+      <second ref="Module0BL5PL20x55eb20eefc20"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL5PR10x55eb20eefeb0" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL5PR10x55eb20eeff30" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL5PR10x55eb20eeffb0">
+      <first ref="Module0BL5PR10x55eb20eefeb0"/>
+      <second ref="Module0BL5PR10x55eb20eeff30"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL5PR20x55eb20ef01c0" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL5PR20x55eb20ef0240" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL5PR20x55eb20ef02c0">
+      <first ref="Module0BL5PR20x55eb20ef01c0"/>
+      <second ref="Module0BL5PR20x55eb20ef0240"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL6PL10x55eb20ef0710" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL6PL10x55eb20ef0790" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL6PL10x55eb20ef0810">
+      <first ref="Module0BL6PL10x55eb20ef0710"/>
+      <second ref="Module0BL6PL10x55eb20ef0790"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL6PL20x55eb20ef0a20" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL6PL20x55eb20ef0aa0" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL6PL20x55eb20edb640">
+      <first ref="Module0BL6PL20x55eb20ef0a20"/>
+      <second ref="Module0BL6PL20x55eb20ef0aa0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL6PR10x55eb20edb850" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL6PR10x55eb20edb8d0" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL6PR10x55eb20ef1170">
+      <first ref="Module0BL6PR10x55eb20edb850"/>
+      <second ref="Module0BL6PR10x55eb20edb8d0"/>
+    </subtraction>
+    <box lunit="mm" name="Module0BL6PR20x55eb20ef1340" x="100" y="100" z="1000"/>
+    <box lunit="mm" name="Module0BL6PR20x55eb20ef13c0" x="60" y="60" z="960"/>
+    <subtraction name="Module0BL6PR20x55eb20ef1440">
+      <first ref="Module0BL6PR20x55eb20ef1340"/>
+      <second ref="Module0BL6PR20x55eb20ef13c0"/>
+    </subtraction>
+    <box lunit="mm" name="Module00x55eb20ee2d90" x="9020" y="9020" z="27060"/>
+  </solids>
+
+  <structure>
+    <volume name="0x55eb20ee3a70">
+      <materialref ref="Scintillator0x55eb20ed8680"/>
+      <solidref ref="0x55eb20ee3820"/>
+    </volume>
+    <volume name="M0L0_C0x55eb20ee7c40">
+      <materialref ref="G4_Al0x55eb20b08990"/>
+      <solidref ref="M0L0_C0x55eb20ee38a0"/>
+    </volume>
+    <volume name="M0L00x55eb20ee3950">
+      <materialref ref="G4_AIR0x55eb20b01490"/>
+      <solidref ref="0x55eb20ee2550"/>
+      <physvol name="M0L00x55eb20ee3bd0">
+        <volumeref ref="0x55eb20ee3a70"/>
+      </physvol>
+      <physvol name="M0L0_C0x55eb20ee7da0">
+        <volumeref ref="M0L0_C0x55eb20ee7c40"/>
+      </physvol>
+    </volume>
+    <volume name="0x55eb20ee81f0">
+      <materialref ref="Scintillator0x55eb20ed8680"/>
+      <solidref ref="0x55eb20ee7f60"/>
+    </volume>
+    <volume name="M0L1_C0x55eb20ee8400">
+      <materialref ref="G4_Al0x55eb20b08990"/>
+      <solidref ref="M0L1_C0x55eb20ee7fe0"/>
+    </volume>
+    <volume name="M0L10x55eb20ee8090">
+      <materialref ref="G4_AIR0x55eb20b01490"/>
+      <solidref ref="0x55eb20ee7ee0"/>
+      <physvol name="M0L10x55eb20ee8350">
+        <volumeref ref="0x55eb20ee81f0"/>
+      </physvol>
+      <physvol name="M0L1_C0x55eb20ee8560">
+        <volumeref ref="M0L1_C0x55eb20ee8400"/>
+      </physvol>
+    </volume>
+    <volume name="0x55eb20ee8a10">
+      <materialref ref="Scintillator0x55eb20ed8680"/>
+      <solidref ref="0x55eb20ee8780"/>
+    </volume>
+    <volume name="M0L2_C0x55eb20ee8c00">
+      <materialref ref="G4_Al0x55eb20b08990"/>
+      <solidref ref="M0L2_C0x55eb20ee8800"/>
+    </volume>
+    <volume name="M0L20x55eb20ee88b0">
+      <materialref ref="G4_AIR0x55eb20b01490"/>
+      <solidref ref="0x55eb20ee8700"/>
+      <physvol name="M0L20x55eb20ee8b70">
+        <volumeref ref="0x55eb20ee8a10"/>
+      </physvol>
+      <physvol name="M0L2_C0x55eb20ee8d60">
+        <volumeref ref="M0L2_C0x55eb20ee8c00"/>
+      </physvol>
+    </volume>
+    <volume name="0x55eb20ee9270">
+      <materialref ref="Scintillator0x55eb20ed8680"/>
+      <solidref ref="0x55eb20ee8fe0"/>
+    </volume>
+    <volume name="M0L3_C0x55eb20ee9460">
+      <materialref ref="G4_Al0x55eb20b08990"/>
+      <solidref ref="M0L3_C0x55eb20ee9060"/>
+    </volume>
+    <volume name="M0L30x55eb20ee9110">
+      <materialref ref="G4_AIR0x55eb20b01490"/>
+      <solidref ref="0x55eb20ee8f60"/>
+      <physvol name="M0L30x55eb20ee93d0">
+        <volumeref ref="0x55eb20ee9270"/>
+      </physvol>
+      <physvol name="M0L3_C0x55eb20ee95c0">
+        <volumeref ref="M0L3_C0x55eb20ee9460"/>
+      </physvol>
+    </volume>
+    <volume name="0x55eb20ee9a50">
+      <materialref ref="Scintillator0x55eb20ed8680"/>
+      <solidref ref="0x55eb20ee97c0"/>
+    </volume>
+    <volume name="M0L4_C0x55eb20ee9c40">
+      <materialref ref="G4_Al0x55eb20b08990"/>
+      <solidref ref="M0L4_C0x55eb20ee9840"/>
+    </volume>
+    <volume name="M0L40x55eb20ee98f0">
+      <materialref ref="G4_AIR0x55eb20b01490"/>
+      <solidref ref="0x55eb20ee9740"/>
+      <physvol name="M0L40x55eb20ee9bb0">
+        <volumeref ref="0x55eb20ee9a50"/>
+      </physvol>
+      <physvol name="M0L4_C0x55eb20ee9da0">
+        <volumeref ref="M0L4_C0x55eb20ee9c40"/>
+      </physvol>
+    </volume>
+    <volume name="0x55eb20eea2a0">
+      <materialref ref="Scintillator0x55eb20ed8680"/>
+      <solidref ref="0x55eb20eea010"/>
+    </volume>
+    <volume name="M0L5_C0x55eb20eea460">
+      <materialref ref="G4_Al0x55eb20b08990"/>
+      <solidref ref="M0L5_C0x55eb20eea090"/>
+    </volume>
+    <volume name="M0L50x55eb20eea140">
+      <materialref ref="G4_AIR0x55eb20b01490"/>
+      <solidref ref="0x55eb20ee9f90"/>
+      <physvol name="M0L50x55eb20eea400">
+        <volumeref ref="0x55eb20eea2a0"/>
+      </physvol>
+      <physvol name="M0L5_C0x55eb20eea5c0">
+        <volumeref ref="M0L5_C0x55eb20eea460"/>
+      </physvol>
+    </volume>
+    <volume name="0x55eb20eeaa70">
+      <materialref ref="Scintillator0x55eb20ed8680"/>
+      <solidref ref="0x55eb20eea7e0"/>
+    </volume>
+    <volume name="M0L6_C0x55eb20eeac60">
+      <materialref ref="G4_Al0x55eb20b08990"/>
+      <solidref ref="M0L6_C0x55eb20eea860"/>
+    </volume>
+    <volume name="M0L60x55eb20eea910">
+      <materialref ref="G4_AIR0x55eb20b01490"/>
+      <solidref ref="0x55eb20eea760"/>
+      <physvol name="M0L60x55eb20eeabd0">
+        <volumeref ref="0x55eb20eeaa70"/>
+      </physvol>
+      <physvol name="M0L6_C0x55eb20eeadc0">
+        <volumeref ref="M0L6_C0x55eb20eeac60"/>
+      </physvol>
+    </volume>
+    <volume name="Module0BL0PL10x55eb20eeb0b0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL0PL10x55eb20eeb000"/>
+    </volume>
+    <volume name="Module0BL0PL20x55eb20eeb3c0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL0PL20x55eb20eeb310"/>
+    </volume>
+    <volume name="Module0BL0PR10x55eb20eeb6d0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL0PR10x55eb20eeb620"/>
+    </volume>
+    <volume name="Module0BL0PR20x55eb20eeb9e0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL0PR20x55eb20eeb930"/>
+    </volume>
+    <volume name="Module0BL1PL10x55eb20eebfc0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL1PL10x55eb20eebf10"/>
+    </volume>
+    <volume name="Module0BL1PL20x55eb20eec2d0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL1PL20x55eb20eec220"/>
+    </volume>
+    <volume name="Module0BL1PR10x55eb20eec5e0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL1PR10x55eb20eec530"/>
+    </volume>
+    <volume name="Module0BL1PR20x55eb20eec8f0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL1PR20x55eb20eec840"/>
+    </volume>
+    <volume name="Module0BL2PL10x55eb20eece40">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL2PL10x55eb20eecd90"/>
+    </volume>
+    <volume name="Module0BL2PL20x55eb20eed150">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL2PL20x55eb20eed0a0"/>
+    </volume>
+    <volume name="Module0BL2PR10x55eb20eed460">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL2PR10x55eb20eed3b0"/>
+    </volume>
+    <volume name="Module0BL2PR20x55eb20eed770">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL2PR20x55eb20eed6c0"/>
+    </volume>
+    <volume name="Module0BL3PL10x55eb20eedd40">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL3PL10x55eb20eedc90"/>
+    </volume>
+    <volume name="Module0BL3PL20x55eb20eee050">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL3PL20x55eb20eedfa0"/>
+    </volume>
+    <volume name="Module0BL3PR10x55eb20eee360">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL3PR10x55eb20eee2b0"/>
+    </volume>
+    <volume name="Module0BL3PR20x55eb20eee670">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL3PR20x55eb20eee5c0"/>
+    </volume>
+    <volume name="Module0BL4PL10x55eb20eeebc0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL4PL10x55eb20eeeb10"/>
+    </volume>
+    <volume name="Module0BL4PL20x55eb20eeeed0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL4PL20x55eb20eeee20"/>
+    </volume>
+    <volume name="Module0BL4PR10x55eb20eef1e0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL4PR10x55eb20eef130"/>
+    </volume>
+    <volume name="Module0BL4PR20x55eb20eef4f0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL4PR20x55eb20eef440"/>
+    </volume>
+    <volume name="Module0BL5PL10x55eb20eefa40">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL5PL10x55eb20eef990"/>
+    </volume>
+    <volume name="Module0BL5PL20x55eb20eefd50">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL5PL20x55eb20eefca0"/>
+    </volume>
+    <volume name="Module0BL5PR10x55eb20ef0060">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL5PR10x55eb20eeffb0"/>
+    </volume>
+    <volume name="Module0BL5PR20x55eb20ef0370">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL5PR20x55eb20ef02c0"/>
+    </volume>
+    <volume name="Module0BL6PL10x55eb20ef08c0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL6PL10x55eb20ef0810"/>
+    </volume>
+    <volume name="Module0BL6PL20x55eb20edb6f0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL6PL20x55eb20edb640"/>
+    </volume>
+    <volume name="Module0BL6PR10x55eb20ef1220">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL6PR10x55eb20ef1170"/>
+    </volume>
+    <volume name="Module0BL6PR20x55eb20ef14f0">
+      <materialref ref="G4_Fe0x55eb20b0f880"/>
+      <solidref ref="Module0BL6PR20x55eb20ef1440"/>
+    </volume>
+    <volume name="Module00x55eb20ee2e10">
+      <materialref ref="G4_AIR0x55eb20b01490"/>
+      <solidref ref="Module00x55eb20ee2d90"/>
+      <physvol name="M0L00x55eb20ee7e00">
+        <volumeref ref="M0L00x55eb20ee3950"/>
+        <position name="M0L00x55eb20ee7e00_pos" unit="mm" x="0" y="0" z="-4395"/>
+      </physvol>
+      <physvol name="M0L10x55eb20ee8610">
+        <volumeref ref="M0L10x55eb20ee8090"/>
+        <position name="M0L10x55eb20ee8610_pos" unit="mm" x="0" y="0" z="-5425"/>
+      </physvol>
+      <physvol name="M0L20x55eb20ee8e40">
+        <volumeref ref="M0L20x55eb20ee88b0"/>
+        <position name="M0L20x55eb20ee8e40_pos" unit="mm" x="0" y="0" z="-9395"/>
+      </physvol>
+      <physvol name="M0L30x55eb20ee9650">
+        <volumeref ref="M0L30x55eb20ee9110"/>
+        <position name="M0L30x55eb20ee9650_pos" unit="mm" x="0" y="0" z="-10425"/>
+      </physvol>
+      <physvol name="M0L40x55eb20ee9e80">
+        <volumeref ref="M0L40x55eb20ee98f0"/>
+        <position name="M0L40x55eb20ee9e80_pos" unit="mm" x="0" y="0" z="-11455"/>
+      </physvol>
+      <physvol name="M0L50x55eb20eea670">
+        <volumeref ref="M0L50x55eb20eea140"/>
+        <position name="M0L50x55eb20eea670_pos" unit="mm" x="0" y="0" z="-12485"/>
+      </physvol>
+      <physvol name="M0L60x55eb20eeae70">
+        <volumeref ref="M0L60x55eb20eea910"/>
+        <position name="M0L60x55eb20eeae70_pos" unit="mm" x="0" y="0" z="-13515"/>
+      </physvol>
+      <physvol name="Module0BL0PL10x55eb20eebb40">
+        <volumeref ref="Module0BL0PL10x55eb20eeb0b0"/>
+        <position name="Module0BL0PL10x55eb20eebb40_pos" unit="mm" x="-4450" y="-4450" z="4575"/>
+      </physvol>
+      <physvol name="Module0BL0PL20x55eb20eebbd0">
+        <volumeref ref="Module0BL0PL20x55eb20eeb3c0"/>
+        <position name="Module0BL0PL20x55eb20eebbd0_pos" unit="mm" x="-4450" y="4450" z="4575"/>
+      </physvol>
+      <physvol name="Module0BL0PR10x55eb20eebcf0">
+        <volumeref ref="Module0BL0PR10x55eb20eeb6d0"/>
+        <position name="Module0BL0PR10x55eb20eebcf0_pos" unit="mm" x="4450" y="-4450" z="4575"/>
+      </physvol>
+      <physvol name="Module0BL0PR20x55eb20eebd80">
+        <volumeref ref="Module0BL0PR20x55eb20eeb9e0"/>
+        <position name="Module0BL0PR20x55eb20eebd80_pos" unit="mm" x="4450" y="4450" z="4575"/>
+      </physvol>
+      <physvol name="Module0BL1PL10x55eb20eeca50">
+        <volumeref ref="Module0BL1PL10x55eb20eebfc0"/>
+        <position name="Module0BL1PL10x55eb20eeca50_pos" unit="mm" x="-4450" y="-4450" z="-4910"/>
+      </physvol>
+      <physvol name="Module0BL1PL20x55eb20eecae0">
+        <volumeref ref="Module0BL1PL20x55eb20eec2d0"/>
+        <position name="Module0BL1PL20x55eb20eecae0_pos" unit="mm" x="-4450" y="4450" z="-4910"/>
+      </physvol>
+      <physvol name="Module0BL1PR10x55eb20eecb70">
+        <volumeref ref="Module0BL1PR10x55eb20eec5e0"/>
+        <position name="Module0BL1PR10x55eb20eecb70_pos" unit="mm" x="4450" y="-4450" z="-4910"/>
+      </physvol>
+      <physvol name="Module0BL1PR20x55eb20eecc00">
+        <volumeref ref="Module0BL1PR20x55eb20eec8f0"/>
+        <position name="Module0BL1PR20x55eb20eecc00_pos" unit="mm" x="4450" y="4450" z="-4910"/>
+      </physvol>
+      <physvol name="Module0BL2PL10x55eb20eed8d0">
+        <volumeref ref="Module0BL2PL10x55eb20eece40"/>
+        <position name="Module0BL2PL10x55eb20eed8d0_pos" unit="mm" x="-4450" y="-4450" z="-7410"/>
+      </physvol>
+      <physvol name="Module0BL2PL20x55eb20eed960">
+        <volumeref ref="Module0BL2PL20x55eb20eed150"/>
+        <position name="Module0BL2PL20x55eb20eed960_pos" unit="mm" x="-4450" y="4450" z="-7410"/>
+      </physvol>
+      <physvol name="Module0BL2PR10x55eb20eebc60">
+        <volumeref ref="Module0BL2PR10x55eb20eed460"/>
+        <position name="Module0BL2PR10x55eb20eebc60_pos" unit="mm" x="4450" y="-4450" z="-7410"/>
+      </physvol>
+      <physvol name="Module0BL2PR20x55eb20eedb00">
+        <volumeref ref="Module0BL2PR20x55eb20eed770"/>
+        <position name="Module0BL2PR20x55eb20eedb00_pos" unit="mm" x="4450" y="4450" z="-7410"/>
+      </physvol>
+      <physvol name="Module0BL3PL10x55eb20eee7d0">
+        <volumeref ref="Module0BL3PL10x55eb20eedd40"/>
+        <position name="Module0BL3PL10x55eb20eee7d0_pos" unit="mm" x="-4450" y="-4450" z="-9910"/>
+      </physvol>
+      <physvol name="Module0BL3PL20x55eb20eee860">
+        <volumeref ref="Module0BL3PL20x55eb20eee050"/>
+        <position name="Module0BL3PL20x55eb20eee860_pos" unit="mm" x="-4450" y="4450" z="-9910"/>
+      </physvol>
+      <physvol name="Module0BL3PR10x55eb20eee8f0">
+        <volumeref ref="Module0BL3PR10x55eb20eee360"/>
+        <position name="Module0BL3PR10x55eb20eee8f0_pos" unit="mm" x="4450" y="-4450" z="-9910"/>
+      </physvol>
+      <physvol name="Module0BL3PR20x55eb20eee980">
+        <volumeref ref="Module0BL3PR20x55eb20eee670"/>
+        <position name="Module0BL3PR20x55eb20eee980_pos" unit="mm" x="4450" y="4450" z="-9910"/>
+      </physvol>
+      <physvol name="Module0BL4PL10x55eb20eef650">
+        <volumeref ref="Module0BL4PL10x55eb20eeebc0"/>
+        <position name="Module0BL4PL10x55eb20eef650_pos" unit="mm" x="-4450" y="-4450" z="-10940"/>
+      </physvol>
+      <physvol name="Module0BL4PL20x55eb20eef6e0">
+        <volumeref ref="Module0BL4PL20x55eb20eeeed0"/>
+        <position name="Module0BL4PL20x55eb20eef6e0_pos" unit="mm" x="-4450" y="4450" z="-10940"/>
+      </physvol>
+      <physvol name="Module0BL4PR10x55eb20eef770">
+        <volumeref ref="Module0BL4PR10x55eb20eef1e0"/>
+        <position name="Module0BL4PR10x55eb20eef770_pos" unit="mm" x="4450" y="-4450" z="-10940"/>
+      </physvol>
+      <physvol name="Module0BL4PR20x55eb20eef800">
+        <volumeref ref="Module0BL4PR20x55eb20eef4f0"/>
+        <position name="Module0BL4PR20x55eb20eef800_pos" unit="mm" x="4450" y="4450" z="-10940"/>
+      </physvol>
+      <physvol name="Module0BL5PL10x55eb20ef04d0">
+        <volumeref ref="Module0BL5PL10x55eb20eefa40"/>
+        <position name="Module0BL5PL10x55eb20ef04d0_pos" unit="mm" x="-4450" y="-4450" z="-11970"/>
+      </physvol>
+      <physvol name="Module0BL5PL20x55eb20ef0560">
+        <volumeref ref="Module0BL5PL20x55eb20eefd50"/>
+        <position name="Module0BL5PL20x55eb20ef0560_pos" unit="mm" x="-4450" y="4450" z="-11970"/>
+      </physvol>
+      <physvol name="Module0BL5PR10x55eb20ef05f0">
+        <volumeref ref="Module0BL5PR10x55eb20ef0060"/>
+        <position name="Module0BL5PR10x55eb20ef05f0_pos" unit="mm" x="4450" y="-4450" z="-11970"/>
+      </physvol>
+      <physvol name="Module0BL5PR20x55eb20ef0680">
+        <volumeref ref="Module0BL5PR20x55eb20ef0370"/>
+        <position name="Module0BL5PR20x55eb20ef0680_pos" unit="mm" x="4450" y="4450" z="-11970"/>
+      </physvol>
+      <physvol name="Module0BL6PL10x55eb20ef1650">
+        <volumeref ref="Module0BL6PL10x55eb20ef08c0"/>
+        <position name="Module0BL6PL10x55eb20ef1650_pos" unit="mm" x="-4450" y="-4450" z="-13000"/>
+      </physvol>
+      <physvol name="Module0BL6PL20x55eb20ef16e0">
+        <volumeref ref="Module0BL6PL20x55eb20edb6f0"/>
+        <position name="Module0BL6PL20x55eb20ef16e0_pos" unit="mm" x="-4450" y="4450" z="-13000"/>
+      </physvol>
+      <physvol name="Module0BL6PR10x55eb20eed9f0">
+        <volumeref ref="Module0BL6PR10x55eb20ef1220"/>
+        <position name="Module0BL6PR10x55eb20eed9f0_pos" unit="mm" x="4450" y="-4450" z="-13000"/>
+      </physvol>
+      <physvol name="Module0BL6PR20x55eb20eeda80">
+        <volumeref ref="Module0BL6PR20x55eb20ef14f0"/>
+        <position name="Module0BL6PR20x55eb20eeda80_pos" unit="mm" x="4450" y="4450" z="-13000"/>
+      </physvol>
+    </volume>
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <world ref="Module00x55eb20ee2e10"/>
+  </setup>
+
+</gdml>
